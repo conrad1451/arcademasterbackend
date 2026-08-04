@@ -1,3 +1,4 @@
+// CHQ: Claude AI (Sonnet) generated this file
 package com.arcade.scoreboard.repository;
 
 import com.arcade.scoreboard.entity.GameType;

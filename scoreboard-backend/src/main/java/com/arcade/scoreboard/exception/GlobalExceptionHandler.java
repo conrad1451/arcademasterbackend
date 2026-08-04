@@ -1,3 +1,4 @@
+// CHQ: Claude AI (Sonnet) generated this file
 package com.arcade.scoreboard.exception;
 
 import org.springframework.http.HttpStatus;

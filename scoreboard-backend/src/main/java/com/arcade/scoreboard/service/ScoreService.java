@@ -1,3 +1,4 @@
+// CHQ: Claude AI (Sonnet) generated this file
 package com.arcade.scoreboard.service;
 
 import com.arcade.scoreboard.dto.ScoreRequest;
