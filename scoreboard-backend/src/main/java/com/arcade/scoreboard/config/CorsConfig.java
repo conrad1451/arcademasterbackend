@@ -12,7 +12,8 @@ public class CorsConfig {
     // Add any other frontend dev/prod origins here as needed.
     private static final String[] ALLOWED_ORIGINS = {
             "http://localhost:3000",
-            "http://localhost:5173"
+            "http://localhost:5173",
+            "https://arcademaster.vercel.app",
     };
 
     @Bean
