@@ -41,7 +41,7 @@ public class ScoreService {
         //      the score is updated. Else, the existing score is returned
         if(request.score() > score.getScore()) {
             score.setScore(request.score());
-            return scoreRepository.save(score)
+            return scoreRepository.save(score);
         }
 
         return score;
