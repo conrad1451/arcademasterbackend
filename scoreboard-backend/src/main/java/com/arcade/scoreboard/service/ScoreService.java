@@ -30,9 +30,21 @@ public class ScoreService {
                         .username(request.username())
                         .gameType(request.gameType())
                         .build());
+ 
+        // CHQ: below is an alternative implementation I decided against
+        // Number higherScore = Math.max(score.getScore(), request.score())
+        // score.setScore(higherScore);
+        // return scoreRepository.save(score);
 
-        score.setScore(request.score());
-        return scoreRepository.save(score);
+        // CHQ: Gemini AI provided implementation for conditional to keep higher score
+        // CHQ: if the new score is higher than the current score, then
+        //      the score is updated. Else, the existing score is returned
+        if(request.score() > score.getScore()) {
+            score.setScore(request.score());
+            return scoreRepository.save(score)
+        }
+
+        return score;
     }
 
     @Transactional(readOnly = true)
