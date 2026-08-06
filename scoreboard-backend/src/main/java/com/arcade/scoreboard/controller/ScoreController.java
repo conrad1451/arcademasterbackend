@@ -32,6 +32,14 @@ public class ScoreController {
         return ResponseEntity.status(HttpStatus.CREATED).body(ScoreResponse.fromEntity(saved));
     }
 
+    /**
+     * Called to perform a health check of the server
+     */
+    @GetMapping("/health")
+    public ResponseEntity<Map<String, String>> getSimpleMessage(){
+        return ResponseEntity.ok(Map.of("status", "The server is working as expected"));
+    }
+     
     /** All of a single user's current scores, one per game. */
     @GetMapping("/user/{username}")
     public ResponseEntity<List<ScoreResponse>> getScoresForUser(@PathVariable String username) {
