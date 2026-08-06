@@ -28,7 +28,8 @@ public class ScoreController {
     @PostMapping
     public ResponseEntity<ScoreResponse> submitScore(@Valid @RequestBody ScoreRequest request) {
         Score saved = scoreService.saveCurrentScore(request);
-        return ResponseEntity.status(HttpStatus.OK).body(ScoreResponse.fromEntity(saved));
+        // return ResponseEntity.status(HttpStatus.OK).body(ScoreResponse.fromEntity(saved));
+        return ResponseEntity.status(HttpStatus.CREATED).body(ScoreResponse.fromEntity(saved));
     }
 
     /** All of a single user's current scores, one per game. */
