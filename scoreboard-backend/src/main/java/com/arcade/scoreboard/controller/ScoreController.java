@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/api/scores")
+@RequestMapping("/api")
 @RequiredArgsConstructor
 public class ScoreController {
 
@@ -44,7 +44,7 @@ public class ScoreController {
     }
      
     /** All of a single user's current scores, one per game. */
-    @GetMapping("/user/{username}")
+    @GetMapping("/scores/user/{username}")
     public ResponseEntity<List<ScoreResponse>> getScoresForUser(@PathVariable String username) {
         List<ScoreResponse> scores = scoreService.getScoresForUser(username)
                 .stream()
@@ -54,7 +54,7 @@ public class ScoreController {
     }
 
     /** Leaderboard for a single game, highest score first. */
-    @GetMapping("/game/{gameType}")
+    @GetMapping("/scores/game/{gameType}")
     public ResponseEntity<List<ScoreResponse>> getLeaderboardForGame(@PathVariable GameType gameType) {
         List<ScoreResponse> scores = scoreService.getLeaderboardForGame(gameType)
                 .stream()
