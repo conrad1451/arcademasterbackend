@@ -1,3 +1,5 @@
+// scoreboard-backend/src/main/java/com/arcade/scoreboard/config/CorsConfig.java
+
 // CHQ: Claude AI (Sonnet) generated this file
 package com.arcade.scoreboard.config;
 

@@ -1,3 +1,6 @@
+// scoreboard-backend/src/main/java/com/arcade/scoreboard/entity/GameType.java
+
+
 // CHQ: Claude AI (Sonnet) generated this file
 package com.arcade.scoreboard.entity;
 

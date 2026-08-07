@@ -1,3 +1,5 @@
+// scoreboard-backend/src/main/java/com/arcade/scoreboard/ScoreboardApplication.java
+
 // CHQ: Claude AI (Sonnet) generated file
 
 package com.arcade.scoreboard;
