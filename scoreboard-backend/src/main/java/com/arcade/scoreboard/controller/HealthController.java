@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Map;
 
+// CHQ: Claude AI (Haiku): made HealthController 
 @RestController
 @RequestMapping("/api")
 @RequiredArgsConstructor
