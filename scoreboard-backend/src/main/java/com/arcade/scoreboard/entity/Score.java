@@ -44,7 +44,8 @@ public class Score {
     private GameType gameType;
 
     @Column(nullable = false)
-    private Long score;
+    @Builder.Default
+    private Long score = 0L;
 
     @Column(name = "updated_at", nullable = false)
     private LocalDateTime updatedAt;
