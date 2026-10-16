@@ -49,7 +49,8 @@ class ScoreServiceTest {
 
         when(scoreRepository.findByUsernameAndGameType("new_player", GameType.TETRIS))
                 .thenReturn(Optional.empty());
-        when(scoreRepository.save(any(Score.class))).thenAnswer(invocation -> invocation.getArgument(0L));
+        // CHQ: Gemini AI: Fixed: changed 0L to integer 0
+        when(scoreRepository.save(any(Score.class))).thenAnswer(invocation -> invocation.getArgument(0));
 
         Score result = scoreService.saveCurrentScore(request);
 

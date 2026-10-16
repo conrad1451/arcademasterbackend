@@ -83,7 +83,7 @@ class ScoreControllerTest {
                 .id(1L)
                 .username("gamer123")
                 .gameType(GameType.TETRIS)  // CHQ: Gemini AI fixed
-                .score(500)
+                .score(500L)
                 .build();
 
         when(scoreService.getLeaderboardForGame(GameType.TETRIS)).thenReturn(List.of(score));  // CHQ: Gemini AI fixed
