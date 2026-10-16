@@ -1,5 +1,8 @@
-gitDiffs/
-buildLogs/
+*/gitDiffs/
+*/gitLogs/
+*/buildLogs/
 
+*/target/
+*.log
 
 .env
