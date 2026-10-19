@@ -13,7 +13,7 @@
 
     <groupId>com.arcade</groupId>
     <artifactId>scoreboard-backend</artifactId>
-    <version>1.0.0</version>
+    <version>0.6.1</version>
     <name>scoreboard-backend</name>
     <description>Backend for storing arcade game scores (2048, Ping Pong, Tetris)</description>
 

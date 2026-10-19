@@ -15,5 +15,6 @@ Decisions for the ArcadeMaster scoreboard backend (`scoreboard-backend/`), recon
 | [ADR-009](ADR-009-api-design-and-error-handling.md) | API design, validation and error handling | Accepted |
 | [ADR-010](ADR-010-testing-strategy-and-java-25-support.md) | Testing strategy and Java 25 test support | Accepted |
 | [ADR-011](ADR-011-ai-assistance-attribution.md) | Attribute AI-assisted code with `CHQ:` comments | Accepted |
+| [ADR-012](ADR-012-semantic-versioning-and-release-tagging.md) | Semantic versioning and release tagging | Accepted |
 
 > These were written after the fact. "Context" and "Consequences" are inferred from commit messages and diffs; correct anything that doesn't match your actual reasoning.
